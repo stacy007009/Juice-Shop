@@ -22,7 +22,7 @@ docker run --rm -p 3000:3000 bkimminich/juice-shop
 
 Пряме посилання: `http://localhost:3000/#/score-board`
 
-![Знайдено сторінку Score Board зі списком челенджів](./screenshots/juiceshop_scoreboard.png)
+![Знайдено сторінку Score Board зі списком челенджів](https://github.com/stacy007009/Juice-Shop/blob/main/IMG_2693.png)
 
 ## Крок 3. Атака на пошуковий рядок (DOM XSS)
 
