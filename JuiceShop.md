@@ -79,7 +79,7 @@ docker run --rm -p 3000:3000 bkimminich/juice-shop
 
 Загальний прогрес на момент завершення роботи: **6 з 179** челенджів (5% Hacking Challenges).
 
-![Підсумковий стан Score Board з переліком пройдених челенджів](./screenshots/juiceshop_final_results.png)
+![Підсумковий стан Score Board з переліком пройдених челенджів](https://github.com/stacy007009/Juice-Shop/blob/main/IMG_2698.png)
 
 ## Інструментарій, використаний у роботі
 
