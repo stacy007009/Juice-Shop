@@ -48,7 +48,7 @@ docker run --rm -p 3000:3000 bkimminich/juice-shop
 
 **Обхід фільтра (Poison Null Byte):** додано `%2500.md` в кінець назви файлу з забороненим розширенням, що дозволило обійти перевірку типу файлу на сервері та завантажити приховані бекапи:
 
-![Успішно завантажені файли через обхід фільтра Poison Null Byte](./screenshots/juiceshop_poison_nullbyte.png)
+![Успішно завантажені файли через обхід фільтра Poison Null Byte](https://github.com/stacy007009/Juice-Shop/blob/main/IMG_2696.png)
 
 Таким чином отримано доступ до кількох файлів (`package.json.bak`, `coupons_2013.md.bak` тощо), що не мали бути публічно доступні.
 
@@ -70,7 +70,7 @@ docker run --rm -p 3000:3000 bkimminich/juice-shop
 
 ## Підсумковий результат
 
-Незважаючи на невдалі спроби з DOM XSS та SQL Injection, вдалося успішно пройти decilька челенджів рівня Broken Access Control та Security Misconfiguration:
+Незважаючи на невдалі спроби з DOM XSS та SQL Injection, вдалося успішно пройти кілька челенджів рівня Broken Access Control та Security Misconfiguration:
 
 - **Forgotten Sales Backup** — доступ до забутого бекап-файлу продажника
 - **Poison Null Byte** — обхід перевірки типу файлу
