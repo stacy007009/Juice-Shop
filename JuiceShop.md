@@ -48,7 +48,10 @@ docker run --rm -p 3000:3000 bkimminich/juice-shop
 
 **Обхід фільтра (Poison Null Byte):** додано `%2500.md` в кінець назви файлу з забороненим розширенням, що дозволило обійти перевірку типу файлу на сервері та завантажити приховані бекапи:
 
-![Успішно завантажені файли через обхід фільтра Poison Null Byte](https://github.com/stacy007009/Juice-Shop/blob/main/IMG_2696.png)
+![Успішно завантажені файли через обхід фільтра Poison Null Byte] 
+(https://github.com/stacy007009/Juice-Shop/blob/main/IMG_2695.png) 
+![Завантажені файли:]
+(https://github.com/stacy007009/Juice-Shop/blob/main/IMG_2696.png) 
 
 Таким чином отримано доступ до кількох файлів (`package.json.bak`, `coupons_2013.md.bak` тощо), що не мали бути публічно доступні.
 
@@ -60,7 +63,8 @@ docker run --rm -p 3000:3000 bkimminich/juice-shop
 
 **Результат:** вхід не виконано, система повернула `Invalid email or password`.
 
-![Невдала спроба SQL-ін'єкції — введено рядок без відкриваючої лапки](https://github.com/stacy007009/Juice-Shop/blob/main/IMG_2697.png)
+![Невдала спроба SQL-ін'єкції — введено рядок без відкриваючої лапки](https://github.com/stacy007009/Juice-Shop/blob/main/IMG_2697.png) 
+
 
 **Причина невдачі:** пропущено відкриваючу одинарну лапку `'`, яка потрібна для розриву синтаксису SQL-запиту. Правильний payload має виглядати як:
 ```
